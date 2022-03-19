@@ -347,7 +347,7 @@ local function BIDXGZK_fake_script() -- Mini3.Script
 
 	function lclick()
 		local args = {
-			[1] = "I'm going to prepare your meal's now.",
+			[1] = "I'm going to prepare your meal(s) now.",
 			[2] = "All"
 		}
 	
