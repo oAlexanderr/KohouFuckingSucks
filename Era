@@ -1,0 +1,17 @@
+local binds = {
+    ["V"] = "Hello, and welcome to Kohaú. My name is Kenny, and I will be serving you today. How many people are in your party?",
+    ["B"] = "Are you going to be sitting upstairs, or downstairs?",
+    ["N"] = "Okay. Would you like to sit at a hibachi table, regular table, or a booth?",
+    ["M"] = "Follow me!",
+    ["L"] = "Thank you for visting Kohaú! I'm glad I got to serve you today."
+}
+
+game:GetService("UserInputService").InputBegan:Connect(function(iobj, gp)
+    if not gp then
+        local msg = binds[iobj.KeyCode.Name]
+        if msg then
+            game.Players:Chat(msg)
+            game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+        end
+    end
+end)
