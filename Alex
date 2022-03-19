@@ -1,34 +1,41 @@
 local Main = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
+local BackShadow = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local Frame_2 = Instance.new("Frame")
+local Front = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local Main1 = Instance.new("TextButton")
+local Right = Instance.new("TextButton")
+local Left = Instance.new("TextButton")
+local Page1 = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
-local Mini7 = Instance.new("TextButton")
+local Main2 = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local Mini1 = Instance.new("TextButton")
+local Main3 = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local Mini4 = Instance.new("TextButton")
+local Main4 = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local Mini9 = Instance.new("TextButton")
+local Mini1 = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local Mini6 = Instance.new("TextButton")
+local Mini2 = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
 local Mini3 = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
-local Mini8 = Instance.new("TextButton")
+local Mini4 = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local Mini5 = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
-local Mini2 = Instance.new("TextButton")
+local Mini6 = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
-local Main2 = Instance.new("TextButton")
+local Mini7 = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
-local Main4 = Instance.new("TextButton")
+local Mini8 = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
-local Main3 = Instance.new("TextButton")
+local Mini9 = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
+local Main1 = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local Page2 = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
 
 --Properties:
 
@@ -36,179 +43,65 @@ Main.Name = "Main"
 Main.Parent = game.CoreGui
 Main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame.Parent = Main
-Frame.BackgroundColor3 = Color3.fromRGB(55, 8, 112)
-Frame.Position = UDim2.new(0.490889609, 0, 0.0549450591, 0)
-Frame.Size = UDim2.new(0, 170, 0, 324)
-Frame.ZIndex = 0
-Frame.Draggable = true
-Frame.Active = true
+BackShadow.Name = "BackShadow"
+BackShadow.Parent = Main
+BackShadow.BackgroundColor3 = Color3.fromRGB(55, 8, 112)
+BackShadow.Position = UDim2.new(0.408360124, 0, 0.149977446, 0)
+BackShadow.Size = UDim2.new(0, 170, 0, 324)
+BackShadow.ZIndex = 0
+BackShadow.Draggable = true
+BackShadow.Active = true
 
 UICorner.CornerRadius = UDim.new(0, 20)
-UICorner.Parent = Frame
+UICorner.Parent = BackShadow
 
-Frame_2.Parent = Frame
-Frame_2.BackgroundColor3 = Color3.fromRGB(103, 17, 208)
-Frame_2.Position = UDim2.new(0.0452997983, 0, -0.0253018569, 0)
-Frame_2.Size = UDim2.new(0, 170, 0, 324)
+Front.Name = "Front"
+Front.Parent = BackShadow
+Front.BackgroundColor3 = Color3.fromRGB(103, 17, 208)
+Front.Position = UDim2.new(0.0452997983, 0, -0.0253018569, 0)
+Front.Size = UDim2.new(0, 170, 0, 324)
 
 UICorner_2.CornerRadius = UDim.new(0, 20)
-UICorner_2.Parent = Frame_2
+UICorner_2.Parent = Front
 
-Main1.Name = "Main1"
-Main1.Parent = Frame_2
-Main1.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Main1.Position = UDim2.new(0.0352941193, 0, 0.0246913694, 0)
-Main1.Size = UDim2.new(0, 156, 0, 35)
-Main1.Font = Enum.Font.Kalam
-Main1.Text = "Greeting"
-Main1.TextColor3 = Color3.fromRGB(255, 255, 255)
-Main1.TextScaled = true
-Main1.TextSize = 14.000
-Main1.TextWrapped = true
+Right.Name = "Right"
+Right.Parent = Front
+Right.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Right.BackgroundTransparency = 1.000
+Right.Position = UDim2.new(0.411764503, 0, 1.02469134, 0)
+Right.Size = UDim2.new(0, 30, 0, 32)
+Right.Font = Enum.Font.Kalam
+Right.Text = ">"
+Right.TextColor3 = Color3.fromRGB(0, 0, 0)
+Right.TextSize = 50.000
+Right.TextWrapped = true
 
-UICorner_3.CornerRadius = UDim.new(0, 12)
-UICorner_3.Parent = Main1
+Left.Name = "Left"
+Left.Parent = Front
+Left.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Left.BackgroundTransparency = 1.000
+Left.Position = UDim2.new(0.411764503, 0, 1.02469134, 0)
+Left.Size = UDim2.new(0, 30, 0, 32)
+Left.Visible = false
+Left.Font = Enum.Font.Kalam
+Left.Text = "<"
+Left.TextColor3 = Color3.fromRGB(0, 0, 0)
+Left.TextSize = 50.000
+Left.TextWrapped = true
 
-Mini7.Name = "Mini7"
-Mini7.Parent = Frame_2
-Mini7.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Mini7.Position = UDim2.new(0.0352941193, 0, 0.839506149, 0)
-Mini7.Size = UDim2.new(0, 45, 0, 45)
-Mini7.Font = Enum.Font.Kalam
-Mini7.Text = "thanks"
-Mini7.TextColor3 = Color3.fromRGB(255, 255, 255)
-Mini7.TextScaled = true
-Mini7.TextSize = 14.000
-Mini7.TextWrapped = true
+Page1.Name = "Page1"
+Page1.Parent = Front
+Page1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Page1.BackgroundTransparency = 1.000
+Page1.Size = UDim2.new(0, 170, 0, 324)
 
-UICorner_4.CornerRadius = UDim.new(0, 12)
-UICorner_4.Parent = Mini7
-
-Mini1.Name = "Mini1"
-Mini1.Parent = Frame_2
-Mini1.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Mini1.Position = UDim2.new(0.0352941193, 0, 0.530864239, 0)
-Mini1.Size = UDim2.new(0, 45, 0, 45)
-Mini1.Font = Enum.Font.Kalam
-Mini1.Text = "follow me"
-Mini1.TextColor3 = Color3.fromRGB(255, 255, 255)
-Mini1.TextScaled = true
-Mini1.TextSize = 14.000
-Mini1.TextWrapped = true
-
-UICorner_5.CornerRadius = UDim.new(0, 12)
-UICorner_5.Parent = Mini1
-
-Mini4.Name = "Mini4"
-Mini4.Parent = Frame_2
-Mini4.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Mini4.Position = UDim2.new(0.0352941491, 0, 0.685185254, 0)
-Mini4.Size = UDim2.new(0, 45, 0, 45)
-Mini4.Font = Enum.Font.Kalam
-Mini4.Text = "alright"
-Mini4.TextColor3 = Color3.fromRGB(255, 255, 255)
-Mini4.TextScaled = true
-Mini4.TextSize = 14.000
-Mini4.TextWrapped = true
-
-UICorner_6.CornerRadius = UDim.new(0, 12)
-UICorner_6.Parent = Mini4
-
-Mini9.Name = "Mini9"
-Mini9.Parent = Frame_2
-Mini9.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Mini9.Position = UDim2.new(0.694117725, 0, 0.839506209, 0)
-Mini9.Size = UDim2.new(0, 45, 0, 45)
-Mini9.Font = Enum.Font.Kalam
-Mini9.Text = "afk"
-Mini9.TextColor3 = Color3.fromRGB(255, 255, 255)
-Mini9.TextScaled = true
-Mini9.TextSize = 14.000
-Mini9.TextWrapped = true
-
-UICorner_7.CornerRadius = UDim.new(0, 12)
-UICorner_7.Parent = Mini9
-
-Mini6.Name = "Mini6"
-Mini6.Parent = Frame_2
-Mini6.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Mini6.Position = UDim2.new(0.694117725, 0, 0.685185254, 0)
-Mini6.Size = UDim2.new(0, 45, 0, 45)
-Mini6.Font = Enum.Font.Kalam
-Mini6.Text = "is that all"
-Mini6.TextColor3 = Color3.fromRGB(255, 255, 255)
-Mini6.TextScaled = true
-Mini6.TextSize = 14.000
-Mini6.TextWrapped = true
-
-UICorner_8.CornerRadius = UDim.new(0, 12)
-UICorner_8.Parent = Mini6
-
-Mini3.Name = "Mini3"
-Mini3.Parent = Frame_2
-Mini3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Mini3.Position = UDim2.new(0.694117725, 0, 0.530864239, 0)
-Mini3.Size = UDim2.new(0, 45, 0, 45)
-Mini3.Font = Enum.Font.Kalam
-Mini3.Text = "prepare"
-Mini3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Mini3.TextScaled = true
-Mini3.TextSize = 14.000
-Mini3.TextWrapped = true
-
-UICorner_9.CornerRadius = UDim.new(0, 12)
-UICorner_9.Parent = Mini3
-
-Mini8.Name = "Mini8"
-Mini8.Parent = Frame_2
-Mini8.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Mini8.Position = UDim2.new(0.370588243, 0, 0.839506149, 0)
-Mini8.Size = UDim2.new(0, 45, 0, 45)
-Mini8.Font = Enum.Font.Kalam
-Mini8.Text = "brb"
-Mini8.TextColor3 = Color3.fromRGB(255, 255, 255)
-Mini8.TextScaled = true
-Mini8.TextSize = 14.000
-Mini8.TextWrapped = true
-
-UICorner_10.CornerRadius = UDim.new(0, 12)
-UICorner_10.Parent = Mini8
-
-Mini5.Name = "Mini5"
-Mini5.Parent = Frame_2
-Mini5.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Mini5.Position = UDim2.new(0.370588243, 0, 0.685185254, 0)
-Mini5.Size = UDim2.new(0, 45, 0, 45)
-Mini5.Font = Enum.Font.Kalam
-Mini5.Text = "good choice"
-Mini5.TextColor3 = Color3.fromRGB(255, 255, 255)
-Mini5.TextScaled = true
-Mini5.TextSize = 14.000
-Mini5.TextWrapped = true
-
-UICorner_11.CornerRadius = UDim.new(0, 12)
-UICorner_11.Parent = Mini5
-
-Mini2.Name = "Mini2"
-Mini2.Parent = Frame_2
-Mini2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Mini2.Position = UDim2.new(0.370588243, 0, 0.530864239, 0)
-Mini2.Size = UDim2.new(0, 45, 0, 45)
-Mini2.Font = Enum.Font.Kalam
-Mini2.Text = "write down"
-Mini2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Mini2.TextScaled = true
-Mini2.TextSize = 14.000
-Mini2.TextWrapped = true
-
-UICorner_12.CornerRadius = UDim.new(0, 12)
-UICorner_12.Parent = Mini2
+UICorner_3.CornerRadius = UDim.new(0, 20)
+UICorner_3.Parent = Page1
 
 Main2.Name = "Main2"
-Main2.Parent = Frame_2
+Main2.Parent = Page1
 Main2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Main2.Position = UDim2.new(0.0352941193, 0, 0.148148149, 0)
+Main2.Position = UDim2.new(0.0411764719, 0, 0.617284, 0)
 Main2.Size = UDim2.new(0, 156, 0, 35)
 Main2.Font = Enum.Font.Kalam
 Main2.Text = "Up or Down"
@@ -217,192 +110,253 @@ Main2.TextScaled = true
 Main2.TextSize = 14.000
 Main2.TextWrapped = true
 
-UICorner_13.CornerRadius = UDim.new(0, 12)
-UICorner_13.Parent = Main2
-
-Main4.Name = "Main4"
-Main4.Parent = Frame_2
-Main4.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Main4.Position = UDim2.new(0.0352941193, 0, 0.391975343, 0)
-Main4.Size = UDim2.new(0, 156, 0, 35)
-Main4.Font = Enum.Font.Kalam
-Main4.Text = "Goodbye"
-Main4.TextColor3 = Color3.fromRGB(255, 255, 255)
-Main4.TextScaled = true
-Main4.TextSize = 14.000
-Main4.TextWrapped = true
-
-UICorner_14.CornerRadius = UDim.new(0, 12)
-UICorner_14.Parent = Main4
+UICorner_4.CornerRadius = UDim.new(0, 12)
+UICorner_4.Parent = Main2
 
 Main3.Name = "Main3"
-Main3.Parent = Frame_2
+Main3.Parent = Page1
 Main3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Main3.Position = UDim2.new(0.0352941193, 0, 0.268518567, 0)
+Main3.Position = UDim2.new(0.0411764719, 0, 0.737654388, 0)
 Main3.Size = UDim2.new(0, 156, 0, 35)
 Main3.Font = Enum.Font.Kalam
-Main3.Text = "What Table"
+Main3.Text = "What type of table"
 Main3.TextColor3 = Color3.fromRGB(255, 255, 255)
 Main3.TextScaled = true
 Main3.TextSize = 14.000
 Main3.TextWrapped = true
 
+UICorner_5.CornerRadius = UDim.new(0, 12)
+UICorner_5.Parent = Main3
+
+Main4.Name = "Main4"
+Main4.Parent = Page1
+Main4.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Main4.Position = UDim2.new(0.0411764719, 0, 0.861111164, 0)
+Main4.Size = UDim2.new(0, 156, 0, 35)
+Main4.Font = Enum.Font.Kalam
+Main4.Text = "Outro"
+Main4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main4.TextScaled = true
+Main4.TextSize = 14.000
+Main4.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 12)
+UICorner_6.Parent = Main4
+
+Mini1.Name = "Mini1"
+Mini1.Parent = Page1
+Mini1.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Mini1.Position = UDim2.new(0.0352941193, 0, 0.0246914029, 0)
+Mini1.Size = UDim2.new(0, 45, 0, 45)
+Mini1.Font = Enum.Font.Kalam
+Mini1.Text = "Writing down.."
+Mini1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mini1.TextScaled = true
+Mini1.TextSize = 14.000
+Mini1.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 12)
+UICorner_7.Parent = Mini1
+
+Mini2.Name = "Mini2"
+Mini2.Parent = Page1
+Mini2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Mini2.Position = UDim2.new(0.370588243, 0, 0.0246914029, 0)
+Mini2.Size = UDim2.new(0, 45, 0, 45)
+Mini2.Font = Enum.Font.Kalam
+Mini2.Text = "Excellent choice!"
+Mini2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mini2.TextScaled = true
+Mini2.TextSize = 14.000
+Mini2.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 12)
+UICorner_8.Parent = Mini2
+
+Mini3.Name = "Mini3"
+Mini3.Parent = Page1
+Mini3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Mini3.Position = UDim2.new(0.694117725, 0, 0.0246914029, 0)
+Mini3.Size = UDim2.new(0, 45, 0, 45)
+Mini3.Font = Enum.Font.Kalam
+Mini3.Text = "Starting"
+Mini3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mini3.TextScaled = true
+Mini3.TextSize = 14.000
+Mini3.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0, 12)
+UICorner_9.Parent = Mini3
+
+Mini4.Name = "Mini4"
+Mini4.Parent = Page1
+Mini4.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Mini4.Position = UDim2.new(0.0352941491, 0, 0.179012418, 0)
+Mini4.Size = UDim2.new(0, 45, 0, 45)
+Mini4.Font = Enum.Font.Kalam
+Mini4.Text = "Drinks?"
+Mini4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mini4.TextScaled = true
+Mini4.TextSize = 14.000
+Mini4.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0, 12)
+UICorner_10.Parent = Mini4
+
+Mini5.Name = "Mini5"
+Mini5.Parent = Page1
+Mini5.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Mini5.Position = UDim2.new(0.370588243, 0, 0.179012418, 0)
+Mini5.Size = UDim2.new(0, 45, 0, 45)
+Mini5.Font = Enum.Font.Kalam
+Mini5.Text = "Aptzrs"
+Mini5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mini5.TextScaled = true
+Mini5.TextSize = 14.000
+Mini5.TextWrapped = true
+
+UICorner_11.CornerRadius = UDim.new(0, 12)
+UICorner_11.Parent = Mini5
+
+Mini6.Name = "Mini6"
+Mini6.Parent = Page1
+Mini6.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Mini6.Position = UDim2.new(0.694117725, 0, 0.179012418, 0)
+Mini6.Size = UDim2.new(0, 45, 0, 45)
+Mini6.Font = Enum.Font.Kalam
+Mini6.Text = "More?"
+Mini6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mini6.TextScaled = true
+Mini6.TextSize = 14.000
+Mini6.TextWrapped = true
+
+UICorner_12.CornerRadius = UDim.new(0, 12)
+UICorner_12.Parent = Mini6
+
+Mini7.Name = "Mini7"
+Mini7.Parent = Page1
+Mini7.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Mini7.Position = UDim2.new(0.0352941193, 0, 0.333333313, 0)
+Mini7.Size = UDim2.new(0, 45, 0, 45)
+Mini7.Font = Enum.Font.Kalam
+Mini7.Text = "Follow me!"
+Mini7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mini7.TextScaled = true
+Mini7.TextSize = 14.000
+Mini7.TextWrapped = true
+
+UICorner_13.CornerRadius = UDim.new(0, 12)
+UICorner_13.Parent = Mini7
+
+Mini8.Name = "Mini8"
+Mini8.Parent = Page1
+Mini8.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Mini8.Position = UDim2.new(0.370588243, 0, 0.333333313, 0)
+Mini8.Size = UDim2.new(0, 45, 0, 45)
+Mini8.Font = Enum.Font.Kalam
+Mini8.Text = "Here."
+Mini8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mini8.TextScaled = true
+Mini8.TextSize = 14.000
+Mini8.TextWrapped = true
+
+UICorner_14.CornerRadius = UDim.new(0, 12)
+UICorner_14.Parent = Mini8
+
+Mini9.Name = "Mini9"
+Mini9.Parent = Page1
+Mini9.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Mini9.Position = UDim2.new(0.694117725, 0, 0.333333373, 0)
+Mini9.Size = UDim2.new(0, 45, 0, 45)
+Mini9.Font = Enum.Font.Kalam
+Mini9.Text = "Alright"
+Mini9.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mini9.TextScaled = true
+Mini9.TextSize = 14.000
+Mini9.TextWrapped = true
+
 UICorner_15.CornerRadius = UDim.new(0, 12)
-UICorner_15.Parent = Main3
+UICorner_15.Parent = Mini9
+
+Main1.Name = "Main1"
+Main1.Parent = Page1
+Main1.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Main1.Position = UDim2.new(0.0411764719, 0, 0.493827134, 0)
+Main1.Size = UDim2.new(0, 156, 0, 35)
+Main1.Font = Enum.Font.Kalam
+Main1.Text = "Intro"
+Main1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main1.TextScaled = true
+Main1.TextSize = 14.000
+Main1.TextWrapped = true
+
+UICorner_16.CornerRadius = UDim.new(0, 12)
+UICorner_16.Parent = Main1
+
+Page2.Name = "Page2"
+Page2.Parent = Front
+Page2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Page2.Size = UDim2.new(0, 170, 0, 324)
+Page2.Visible = false
+
+UICorner_17.CornerRadius = UDim.new(0, 20)
+UICorner_17.Parent = Page2
+
+TextLabel.Parent = Page2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0352941193, 0, 0.422839493, 0)
+TextLabel.Size = UDim2.new(0, 157, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "u fucking stinky dahoodian"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
 
 -- Scripts:
 
-local function EPTUMEI_fake_script() -- Main1.Script 
-	local script = Instance.new('Script', Main1)
+local function XCYU_fake_script() -- Right.Script 
+	local script = Instance.new('Script', Right)
 
-	function lclick()
-		local args = {
-			[1] = "Hello, and welcome to Kohaú! My name is Lex, and I will be serving you today. How many people will be accommodating you today?",
-			[2] = "All"
-		}
+	local page1 = script.Parent.Parent.Page1
+	local page2 = script.Parent.Parent.Page2
 	
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	local Right = script.Parent
+	local Left = script.Parent.Parent.Left
+	
+	
+	function lclick()
+		page1.Visible = false
+		page2.Visible = true
+		Right.Visible = false
+		Left.Visible = true
 	end
+	
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(EPTUMEI_fake_script)()
-local function ELUGZVI_fake_script() -- Mini7.Script 
-	local script = Instance.new('Script', Mini7)
+coroutine.wrap(XCYU_fake_script)()
+local function TUSG_fake_script() -- Left.Script 
+	local script = Instance.new('Script', Left)
 
-	function lclick()
-		local args = {
-			[1] = "Thank you!",
-			[2] = "All"
-		}
+	local page1 = script.Parent.Parent.Page1
+	local page2 = script.Parent.Parent.Page2
 	
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	local Left = script.Parent
+	local Right = script.Parent.Parent.Right
+	
+	
+	function lclick()
+		page1.Visible = true
+		page2.Visible = false
+		Right.Visible = true
+		Left.Visible = false
 	end
+	
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(ELUGZVI_fake_script)()
-local function VXDQWSZ_fake_script() -- Mini1.Script 
-	local script = Instance.new('Script', Mini1)
-
-	function lclick()
-		local args = {
-			[1] = "Follow me.",
-			[2] = "All"
-		}
-	
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-	end
-	
-	script.Parent.MouseButton1Click:Connect(lclick)
-end
-coroutine.wrap(VXDQWSZ_fake_script)()
-local function LGKIIHD_fake_script() -- Mini4.Script 
-	local script = Instance.new('Script', Mini4)
-
-	function lclick()
-		local args = {
-			[1] = "Alright.",
-			[2] = "All"
-		}
-	
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-	end
-	
-	script.Parent.MouseButton1Click:Connect(lclick)
-end
-coroutine.wrap(LGKIIHD_fake_script)()
-local function KDGAQYX_fake_script() -- Mini9.Script 
-	local script = Instance.new('Script', Mini9)
-
-	function lclick()
-		local args = {
-			[1] = "Afk.",
-			[2] = "All"
-		}
-	
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-	end
-	
-	script.Parent.MouseButton1Click:Connect(lclick)
-end
-coroutine.wrap(KDGAQYX_fake_script)()
-local function RRLDZ_fake_script() -- Mini6.Script 
-	local script = Instance.new('Script', Mini6)
-
-	function lclick()
-		local args = {
-			[1] = "Is that all?",
-			[2] = "All"
-		}
-	
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-	end
-	
-	script.Parent.MouseButton1Click:Connect(lclick)
-end
-coroutine.wrap(RRLDZ_fake_script)()
-local function NZYOO_fake_script() -- Mini3.Script 
-	local script = Instance.new('Script', Mini3)
-
-	function lclick()
-		local args = {
-			[1] = "I'm going to prepare your meal(s) now.",
-			[2] = "All"
-		}
-	
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-	end
-	
-	script.Parent.MouseButton1Click:Connect(lclick)
-end
-coroutine.wrap(NZYOO_fake_script)()
-local function EJZGGSC_fake_script() -- Mini8.Script 
-	local script = Instance.new('Script', Mini8)
-
-	function lclick()
-		local args = {
-			[1] = "I'll be right back!",
-			[2] = "All"
-		}
-	
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-	end
-	
-	script.Parent.MouseButton1Click:Connect(lclick)
-end
-coroutine.wrap(EJZGGSC_fake_script)()
-local function XRXMP_fake_script() -- Mini5.Script 
-	local script = Instance.new('Script', Mini5)
-
-	function lclick()
-		local args = {
-			[1] = "Excellent Choice!",
-			[2] = "All"
-		}
-	
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-	end
-	
-	script.Parent.MouseButton1Click:Connect(lclick)
-end
-coroutine.wrap(XRXMP_fake_script)()
-local function IUYV_fake_script() -- Mini2.Script 
-	local script = Instance.new('Script', Mini2)
-
-	function lclick()
-		local args = {
-			[1] = "Let me write this down.",
-			[2] = "All"
-		}
-	
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-	end
-	
-	script.Parent.MouseButton1Click:Connect(lclick)
-end
-coroutine.wrap(IUYV_fake_script)()
-local function IOOQK_fake_script() -- Main2.Script 
+coroutine.wrap(TUSG_fake_script)()
+local function GFXP_fake_script() -- Main2.Script 
 	local script = Instance.new('Script', Main2)
 
 	function lclick()
@@ -416,23 +370,8 @@ local function IOOQK_fake_script() -- Main2.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(IOOQK_fake_script)()
-local function TGBBWFW_fake_script() -- Main4.Script 
-	local script = Instance.new('Script', Main4)
-
-	function lclick()
-		local args = {
-			[1] = "Thank you for visting Kohaú! It was a pleasure serving you today.",
-			[2] = "All"
-		}
-	
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-	end
-	
-	script.Parent.MouseButton1Click:Connect(lclick)
-end
-coroutine.wrap(TGBBWFW_fake_script)()
-local function FOZXKJ_fake_script() -- Main3.Script 
+coroutine.wrap(GFXP_fake_script)()
+local function UFPZL_fake_script() -- Main3.Script 
 	local script = Instance.new('Script', Main3)
 
 	function lclick()
@@ -446,4 +385,169 @@ local function FOZXKJ_fake_script() -- Main3.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(FOZXKJ_fake_script)()
+coroutine.wrap(UFPZL_fake_script)()
+local function XAUDVD_fake_script() -- Main4.Script 
+	local script = Instance.new('Script', Main4)
+
+	function lclick()
+		local args = {
+			[1] = "Thank you for visting Kohaú! It was a pleasure serving you today.",
+			[2] = "All"
+		}
+	
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end
+	
+	script.Parent.MouseButton1Click:Connect(lclick)
+end
+coroutine.wrap(XAUDVD_fake_script)()
+local function HDWJTYI_fake_script() -- Mini1.Script 
+	local script = Instance.new('Script', Mini1)
+
+	function lclick()
+		local args = {
+			[1] = "Let me write this down..",
+			[2] = "All"
+		}
+	
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end
+	
+	script.Parent.MouseButton1Click:Connect(lclick)
+end
+coroutine.wrap(HDWJTYI_fake_script)()
+local function LNYIN_fake_script() -- Mini2.Script 
+	local script = Instance.new('Script', Mini2)
+
+	function lclick()
+		local args = {
+			[1] = "Excellent choice!",
+			[2] = "All"
+		}
+	
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end
+	
+	script.Parent.MouseButton1Click:Connect(lclick)
+end
+coroutine.wrap(LNYIN_fake_script)()
+local function FQZNJQG_fake_script() -- Mini3.Script 
+	local script = Instance.new('Script', Mini3)
+
+	function lclick()
+		local args = {
+			[1] = "I'm going to prepare your meal(s) now.",
+			[2] = "All"
+		}
+	
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end
+	
+	script.Parent.MouseButton1Click:Connect(lclick)
+end
+coroutine.wrap(FQZNJQG_fake_script)()
+local function DZRCEKA_fake_script() -- Mini4.Script 
+	local script = Instance.new('Script', Mini4)
+
+	function lclick()
+		local args = {
+			[1] = "Can I start you off with any drinks?",
+			[2] = "All"
+		}
+	
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end
+	
+	script.Parent.MouseButton1Click:Connect(lclick)
+end
+coroutine.wrap(DZRCEKA_fake_script)()
+local function NMEPF_fake_script() -- Mini5.Script 
+	local script = Instance.new('Script', Mini5)
+
+	function lclick()
+		local args = {
+			[1] = "Would you like any appetizers?",
+			[2] = "All"
+		}
+	
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end
+	
+	script.Parent.MouseButton1Click:Connect(lclick)
+end
+coroutine.wrap(NMEPF_fake_script)()
+local function QWDNI_fake_script() -- Mini6.Script 
+	local script = Instance.new('Script', Mini6)
+
+	function lclick()
+		local args = {
+			[1] = "Can I get you anything else?",
+			[2] = "All"
+		}
+	
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end
+	
+	script.Parent.MouseButton1Click:Connect(lclick)
+end
+coroutine.wrap(QWDNI_fake_script)()
+local function BLTSJPR_fake_script() -- Mini7.Script 
+	local script = Instance.new('Script', Mini7)
+
+	function lclick()
+		local args = {
+			[1] = "Follow me!",
+			[2] = "All"
+		}
+	
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end
+	
+	script.Parent.MouseButton1Click:Connect(lclick)
+end
+coroutine.wrap(BLTSJPR_fake_script)()
+local function JTRKYLW_fake_script() -- Mini8.Script 
+	local script = Instance.new('Script', Mini8)
+
+	function lclick()
+		local args = {
+			[1] = "Here you go!",
+			[2] = "All"
+		}
+	
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end
+	
+	script.Parent.MouseButton1Click:Connect(lclick)
+end
+coroutine.wrap(JTRKYLW_fake_script)()
+local function FZUKBYX_fake_script() -- Mini9.Script 
+	local script = Instance.new('Script', Mini9)
+
+	function lclick()
+		local args = {
+			[1] = "Alright!",
+			[2] = "All"
+		}
+	
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end
+	
+	script.Parent.MouseButton1Click:Connect(lclick)
+end
+coroutine.wrap(FZUKBYX_fake_script)()
+local function TIAHHSQ_fake_script() -- Main1.Script 
+	local script = Instance.new('Script', Main1)
+
+	function lclick()
+		local args = {
+			[1] = "Hello, and welcome to Kohaú! My name is Lex, and I will be serving you today. How many people will be accommodating you today?",
+			[2] = "All"
+		}
+	
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end
+	
+	script.Parent.MouseButton1Click:Connect(lclick)
+end
+coroutine.wrap(TIAHHSQ_fake_script)()
