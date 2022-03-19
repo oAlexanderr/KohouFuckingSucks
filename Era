@@ -1,4 +1,4 @@
-local MainEra = Instance.new("ScreenGui")
+local poopieera = Instance.new("ScreenGui")
 local BackShadow = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local Front = Instance.new("Frame")
@@ -35,16 +35,25 @@ local Main1 = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
 local Page2 = Instance.new("Frame")
 local UICorner_17 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local Main4_2 = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local Main3_2 = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local Main2_2 = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local Main1_2 = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local dbfjgr = Instance.new("TextLabel")
+local Label1 = Instance.new("TextLabel")
 
 --Properties:
 
-MainEra.Name = "MainEra"
-MainEra.Parent = game.CoreGui
-MainEra.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+poopieera.Name = "poopie era"
+poopieera.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+poopieera.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 BackShadow.Name = "BackShadow"
-BackShadow.Parent = MainEra
+BackShadow.Parent = poopieera
 BackShadow.BackgroundColor3 = Color3.fromRGB(55, 8, 112)
 BackShadow.Position = UDim2.new(0.408360124, 0, 0.149977446, 0)
 BackShadow.Size = UDim2.new(0, 170, 0, 324)
@@ -296,25 +305,102 @@ UICorner_16.Parent = Main1
 Page2.Name = "Page2"
 Page2.Parent = Front
 Page2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Page2.BackgroundTransparency = 1.000
 Page2.Size = UDim2.new(0, 170, 0, 324)
 Page2.Visible = false
 
 UICorner_17.CornerRadius = UDim.new(0, 20)
 UICorner_17.Parent = Page2
 
-TextLabel.Parent = Page2
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.0352941193, 0, 0.422839493, 0)
-TextLabel.Size = UDim2.new(0, 157, 0, 50)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "u fucking stinky dahoodian"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextSize = 14.000
+Main4_2.Name = "Main4"
+Main4_2.Parent = Page2
+Main4_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Main4_2.Position = UDim2.new(0.0411764719, 0, 0.861111104, 0)
+Main4_2.Size = UDim2.new(0, 156, 0, 35)
+Main4_2.Font = Enum.Font.Kalam
+Main4_2.Text = "bye bitch"
+Main4_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main4_2.TextScaled = true
+Main4_2.TextSize = 14.000
+Main4_2.TextWrapped = true
+
+UICorner_18.CornerRadius = UDim.new(0, 12)
+UICorner_18.Parent = Main4_2
+
+Main3_2.Name = "Main3"
+Main3_2.Parent = Page2
+Main3_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Main3_2.Position = UDim2.new(0.0411764719, 0, 0.737654269, 0)
+Main3_2.Size = UDim2.new(0, 156, 0, 35)
+Main3_2.Font = Enum.Font.Kalam
+Main3_2.Text = "Anything else?"
+Main3_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main3_2.TextScaled = true
+Main3_2.TextSize = 14.000
+Main3_2.TextWrapped = true
+
+UICorner_19.CornerRadius = UDim.new(0, 12)
+UICorner_19.Parent = Main3_2
+
+Main2_2.Name = "Main2"
+Main2_2.Parent = Page2
+Main2_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Main2_2.Position = UDim2.new(0.0411764719, 0, 0.617283881, 0)
+Main2_2.Size = UDim2.new(0, 156, 0, 35)
+Main2_2.Font = Enum.Font.Kalam
+Main2_2.Text = "Let me write this down"
+Main2_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main2_2.TextScaled = true
+Main2_2.TextSize = 14.000
+Main2_2.TextWrapped = true
+
+UICorner_20.CornerRadius = UDim.new(0, 12)
+UICorner_20.Parent = Main2_2
+
+Main1_2.Name = "Main1"
+Main1_2.Parent = Page2
+Main1_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Main1_2.Position = UDim2.new(0.0411764719, 0, 0.493827105, 0)
+Main1_2.Size = UDim2.new(0, 156, 0, 35)
+Main1_2.Font = Enum.Font.Kalam
+Main1_2.Text = "Intro"
+Main1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main1_2.TextScaled = true
+Main1_2.TextSize = 14.000
+Main1_2.TextWrapped = true
+
+UICorner_21.CornerRadius = UDim.new(0, 12)
+UICorner_21.Parent = Main1_2
+
+dbfjgr.Name = "dbfjgr"
+dbfjgr.Parent = Page2
+dbfjgr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dbfjgr.BackgroundTransparency = 1.000
+dbfjgr.Position = UDim2.new(0.0470588244, 0, 0.104938269, 0)
+dbfjgr.Size = UDim2.new(0, 162, 0, 37)
+dbfjgr.Font = Enum.Font.Kalam
+dbfjgr.Text = "era fucks furries named alex"
+dbfjgr.TextColor3 = Color3.fromRGB(255, 255, 255)
+dbfjgr.TextScaled = true
+dbfjgr.TextSize = 14.000
+dbfjgr.TextWrapped = true
+
+Label1.Name = "Label1"
+Label1.Parent = Page2
+Label1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label1.BackgroundTransparency = 1.000
+Label1.Position = UDim2.new(-0.0588235259, 0, 0.0253018513, 0)
+Label1.Size = UDim2.new(0, 190, 0, 48)
+Label1.Font = Enum.Font.Kalam
+Label1.Text = "takeout shit"
+Label1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label1.TextScaled = true
+Label1.TextSize = 14.000
+Label1.TextWrapped = true
 
 -- Scripts:
 
-local function SQRUTYC_fake_script() -- Right.Script 
+local function IYJZJPG_fake_script() -- Right.Script 
 	local script = Instance.new('Script', Right)
 
 	local page1 = script.Parent.Parent.Page1
@@ -334,8 +420,8 @@ local function SQRUTYC_fake_script() -- Right.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(SQRUTYC_fake_script)()
-local function JVTXYQ_fake_script() -- Left.Script 
+coroutine.wrap(IYJZJPG_fake_script)()
+local function PPWT_fake_script() -- Left.Script 
 	local script = Instance.new('Script', Left)
 
 	local page1 = script.Parent.Parent.Page1
@@ -355,8 +441,8 @@ local function JVTXYQ_fake_script() -- Left.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(JVTXYQ_fake_script)()
-local function VITBM_fake_script() -- Main2.Script 
+coroutine.wrap(PPWT_fake_script)()
+local function GZAE_fake_script() -- Main2.Script 
 	local script = Instance.new('Script', Main2)
 
 	function lclick()
@@ -370,13 +456,13 @@ local function VITBM_fake_script() -- Main2.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(VITBM_fake_script)()
-local function BSCHZQ_fake_script() -- Main3.Script 
+coroutine.wrap(GZAE_fake_script)()
+local function GCMS_fake_script() -- Main3.Script 
 	local script = Instance.new('Script', Main3)
 
 	function lclick()
 		local args = {
-			[1] = "Okay. Would you like to sit at a hibachi table, regular table, or a booth? ",
+			[1] = "Okay. Would you like to sit at a hibachi table, regular table, or a booth?",
 			[2] = "All"
 		}
 	
@@ -385,13 +471,13 @@ local function BSCHZQ_fake_script() -- Main3.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(BSCHZQ_fake_script)()
-local function HZYGY_fake_script() -- Main4.Script 
+coroutine.wrap(GCMS_fake_script)()
+local function JDBRI_fake_script() -- Main4.Script 
 	local script = Instance.new('Script', Main4)
 
 	function lclick()
 		local args = {
-			[1] = "Thank you for visting Kohaú! I'm glad I got to serve you today.",
+			[1] = "Thank you for visting Kohaú! It was a pleasure serving you today.",
 			[2] = "All"
 		}
 	
@@ -400,8 +486,8 @@ local function HZYGY_fake_script() -- Main4.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(HZYGY_fake_script)()
-local function ADPLE_fake_script() -- Mini1.Script 
+coroutine.wrap(JDBRI_fake_script)()
+local function TVMMLZ_fake_script() -- Mini1.Script 
 	local script = Instance.new('Script', Mini1)
 
 	function lclick()
@@ -415,8 +501,8 @@ local function ADPLE_fake_script() -- Mini1.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(ADPLE_fake_script)()
-local function CTKCN_fake_script() -- Mini2.Script 
+coroutine.wrap(TVMMLZ_fake_script)()
+local function EIHT_fake_script() -- Mini2.Script 
 	local script = Instance.new('Script', Mini2)
 
 	function lclick()
@@ -430,8 +516,8 @@ local function CTKCN_fake_script() -- Mini2.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(CTKCN_fake_script)()
-local function NOMJ_fake_script() -- Mini3.Script 
+coroutine.wrap(EIHT_fake_script)()
+local function UVQRZ_fake_script() -- Mini3.Script 
 	local script = Instance.new('Script', Mini3)
 
 	function lclick()
@@ -445,8 +531,8 @@ local function NOMJ_fake_script() -- Mini3.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(NOMJ_fake_script)()
-local function YJNJY_fake_script() -- Mini4.Script 
+coroutine.wrap(UVQRZ_fake_script)()
+local function MGSE_fake_script() -- Mini4.Script 
 	local script = Instance.new('Script', Mini4)
 
 	function lclick()
@@ -460,8 +546,8 @@ local function YJNJY_fake_script() -- Mini4.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(YJNJY_fake_script)()
-local function GJFV_fake_script() -- Mini5.Script 
+coroutine.wrap(MGSE_fake_script)()
+local function BDUJ_fake_script() -- Mini5.Script 
 	local script = Instance.new('Script', Mini5)
 
 	function lclick()
@@ -475,8 +561,8 @@ local function GJFV_fake_script() -- Mini5.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(GJFV_fake_script)()
-local function RIZLQC_fake_script() -- Mini6.Script 
+coroutine.wrap(BDUJ_fake_script)()
+local function RPXLR_fake_script() -- Mini6.Script 
 	local script = Instance.new('Script', Mini6)
 
 	function lclick()
@@ -490,8 +576,8 @@ local function RIZLQC_fake_script() -- Mini6.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(RIZLQC_fake_script)()
-local function VIPM_fake_script() -- Mini7.Script 
+coroutine.wrap(RPXLR_fake_script)()
+local function EMSSQI_fake_script() -- Mini7.Script 
 	local script = Instance.new('Script', Mini7)
 
 	function lclick()
@@ -505,8 +591,8 @@ local function VIPM_fake_script() -- Mini7.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(VIPM_fake_script)()
-local function MODV_fake_script() -- Mini8.Script 
+coroutine.wrap(EMSSQI_fake_script)()
+local function YRXHDEL_fake_script() -- Mini8.Script 
 	local script = Instance.new('Script', Mini8)
 
 	function lclick()
@@ -520,8 +606,8 @@ local function MODV_fake_script() -- Mini8.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(MODV_fake_script)()
-local function POJRGX_fake_script() -- Mini9.Script 
+coroutine.wrap(YRXHDEL_fake_script)()
+local function WZEP_fake_script() -- Mini9.Script 
 	local script = Instance.new('Script', Mini9)
 
 	function lclick()
@@ -535,8 +621,8 @@ local function POJRGX_fake_script() -- Mini9.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(POJRGX_fake_script)()
-local function UZUPKE_fake_script() -- Main1.Script 
+coroutine.wrap(WZEP_fake_script)()
+local function NZXOAX_fake_script() -- Main1.Script 
 	local script = Instance.new('Script', Main1)
 
 	function lclick()
@@ -550,4 +636,64 @@ local function UZUPKE_fake_script() -- Main1.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(UZUPKE_fake_script)()
+coroutine.wrap(NZXOAX_fake_script)()
+local function BSWIL_fake_script() -- Main4_2.Script 
+	local script = Instance.new('Script', Main4_2)
+
+	function lclick()
+		local args = {
+			[1] = "Thank you for visting Kohaú! It was a pleasure serving you today.",
+			[2] = "All"
+		}
+	
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end
+	
+	script.Parent.MouseButton1Click:Connect(lclick)
+end
+coroutine.wrap(BSWIL_fake_script)()
+local function DFCPNUR_fake_script() -- Main3_2.Script 
+	local script = Instance.new('Script', Main3_2)
+
+	function lclick()
+		local args = {
+			[1] = "Can I get you anything else?",
+			[2] = "All"
+		}
+	
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end
+	
+	script.Parent.MouseButton1Click:Connect(lclick)
+end
+coroutine.wrap(DFCPNUR_fake_script)()
+local function NNAH_fake_script() -- Main2_2.Script 
+	local script = Instance.new('Script', Main2_2)
+
+	function lclick()
+		local args = {
+			[1] = "Let me write this down.",
+			[2] = "All"
+		}
+	
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end
+	
+	script.Parent.MouseButton1Click:Connect(lclick)
+end
+coroutine.wrap(NNAH_fake_script)()
+local function ZSESKH_fake_script() -- Main1_2.Script 
+	local script = Instance.new('Script', Main1_2)
+
+	function lclick()
+		local args = {
+			[1] = "Hello, and welcome to Kohaú's take-out bar! My name is Kenny, and I will be serving you today.",
+			[2] = "All"
+		}
+	
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end
+	
+	script.Parent.MouseButton1Click:Connect(lclick)
+end
+coroutine.wrap(ZSESKH_fake_script)()
