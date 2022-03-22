@@ -51,6 +51,7 @@ local Label1 = Instance.new("TextLabel")
 poopieera.Name = "poopie era"
 poopieera.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 poopieera.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+poopieera.ResetOnSpawn = false
 
 BackShadow.Name = "BackShadow"
 BackShadow.Parent = poopieera
