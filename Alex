@@ -51,6 +51,7 @@ local Label1 = Instance.new("TextLabel")
 MainAlex.Name = "MainAlex"
 MainAlex.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 MainAlex.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+MainAlex.ResetOnSpawn = false
 
 BackShadow.Name = "BackShadow"
 BackShadow.Parent = MainAlex
