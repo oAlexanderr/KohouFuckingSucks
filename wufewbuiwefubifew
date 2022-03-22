@@ -339,7 +339,7 @@ UICorner_17.Parent = Right
 
 -- Scripts:
 
-local function JMKXGI_fake_script() -- Era.Script 
+local function XZFNKJJ_fake_script() -- Era.Script 
 	local script = Instance.new('Script', Era)
 
 	local Era = script.Parent
@@ -362,8 +362,8 @@ local function JMKXGI_fake_script() -- Era.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(JMKXGI_fake_script)()
-local function DKCRN_fake_script() -- Alex.Script 
+coroutine.wrap(XZFNKJJ_fake_script)()
+local function INWQ_fake_script() -- Alex.Script 
 	local script = Instance.new('Script', Alex)
 
 	local Alex = script.Parent
@@ -386,8 +386,8 @@ local function DKCRN_fake_script() -- Alex.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(DKCRN_fake_script)()
-local function KSSWFG_fake_script() -- Intro.Alex 
+coroutine.wrap(INWQ_fake_script)()
+local function FVLJ_fake_script() -- Intro.Alex 
 	local script = Instance.new('Script', Intro)
 
 	function lclick()
@@ -401,8 +401,8 @@ local function KSSWFG_fake_script() -- Intro.Alex
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(KSSWFG_fake_script)()
-local function IVAWVU_fake_script() -- Intro.Era 
+coroutine.wrap(FVLJ_fake_script)()
+local function SWQRSVN_fake_script() -- Intro.Era 
 	local script = Instance.new('Script', Intro)
 
 	function lclick()
@@ -416,8 +416,8 @@ local function IVAWVU_fake_script() -- Intro.Era
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(IVAWVU_fake_script)()
-local function JLXCCF_fake_script() -- Floor.Era 
+coroutine.wrap(SWQRSVN_fake_script)()
+local function GQCZJC_fake_script() -- Floor.Era 
 	local script = Instance.new('Script', Floor)
 
 	function lclick()
@@ -431,8 +431,8 @@ local function JLXCCF_fake_script() -- Floor.Era
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(JLXCCF_fake_script)()
-local function PDULS_fake_script() -- Floor.Alex 
+coroutine.wrap(GQCZJC_fake_script)()
+local function XSEJCSM_fake_script() -- Floor.Alex 
 	local script = Instance.new('Script', Floor)
 
 	function lclick()
@@ -446,8 +446,8 @@ local function PDULS_fake_script() -- Floor.Alex
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(PDULS_fake_script)()
-local function EYPGLN_fake_script() -- TableType.Era 
+coroutine.wrap(XSEJCSM_fake_script)()
+local function MRYQBNR_fake_script() -- TableType.Era 
 	local script = Instance.new('Script', TableType)
 
 	function lclick()
@@ -461,8 +461,8 @@ local function EYPGLN_fake_script() -- TableType.Era
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(EYPGLN_fake_script)()
-local function RQWFV_fake_script() -- TableType.Alex 
+coroutine.wrap(MRYQBNR_fake_script)()
+local function RRTDJXT_fake_script() -- TableType.Alex 
 	local script = Instance.new('Script', TableType)
 
 	function lclick()
@@ -476,8 +476,8 @@ local function RQWFV_fake_script() -- TableType.Alex
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(RQWFV_fake_script)()
-local function DNYPS_fake_script() -- Outro.Alex 
+coroutine.wrap(RRTDJXT_fake_script)()
+local function KJSRAT_fake_script() -- Outro.Alex 
 	local script = Instance.new('Script', Outro)
 
 	function lclick()
@@ -491,8 +491,8 @@ local function DNYPS_fake_script() -- Outro.Alex
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(DNYPS_fake_script)()
-local function CBSC_fake_script() -- Outro.Era 
+coroutine.wrap(KJSRAT_fake_script)()
+local function MGFQ_fake_script() -- Outro.Era 
 	local script = Instance.new('Script', Outro)
 
 	function lclick()
@@ -506,8 +506,8 @@ local function CBSC_fake_script() -- Outro.Era
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(CBSC_fake_script)()
-local function GLKNPG_fake_script() -- Follow.Script 
+coroutine.wrap(MGFQ_fake_script)()
+local function LPYZHWY_fake_script() -- Follow.Script 
 	local script = Instance.new('Script', Follow)
 
 	function lclick()
@@ -521,8 +521,8 @@ local function GLKNPG_fake_script() -- Follow.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(GLKNPG_fake_script)()
-local function XGWOYFQ_fake_script() -- Alright.Script 
+coroutine.wrap(LPYZHWY_fake_script)()
+local function NLUOAM_fake_script() -- Alright.Script 
 	local script = Instance.new('Script', Alright)
 
 	function lclick()
@@ -536,28 +536,28 @@ local function XGWOYFQ_fake_script() -- Alright.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(XGWOYFQ_fake_script)()
-local function BXTM_fake_script() -- Left.LeftButton 
+coroutine.wrap(NLUOAM_fake_script)()
+local function LEKWX_fake_script() -- Left.LeftButton 
 	local script = Instance.new('Script', Left)
 
 	function onclick()
-		print("fuckleft")
+		
 		script.Parent.Parent.Parent.Backing.Pages.MS.Visible = false
 		script.Parent.Parent.Parent.Backing.Pages.Settings.Visible = true
 	end
 	
 	script.parent.MouseButton1Click:connect(onclick)
 end
-coroutine.wrap(BXTM_fake_script)()
-local function RJONT_fake_script() -- Right.RightButton 
+coroutine.wrap(LEKWX_fake_script)()
+local function DXAQYP_fake_script() -- Right.RightButton 
 	local script = Instance.new('Script', Right)
 
 	function onclick()
-		print("fuckright")
+		
 		script.Parent.Parent.Parent.Backing.Pages.MS.Visible = true
 		script.Parent.Parent.Parent.Backing.Pages.Settings.Visible = false
 	end
 	
 	script.parent.MouseButton1Click:connect(onclick)
 end
-coroutine.wrap(RJONT_fake_script)()
+coroutine.wrap(DXAQYP_fake_script)()
